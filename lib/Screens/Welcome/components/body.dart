@@ -1,7 +1,7 @@
 import 'package:ecommerce/Screens/Login/login_screen.dart';
-import 'package:ecommerce/Screens/Signin/signin_screen.dart';
+import 'package:ecommerce/Screens/Signup/signup_screen.dart';
 import 'package:ecommerce/Screens/Welcome/components/background.dart';
-import 'package:ecommerce/components/reounded_button.dart';
+import 'package:ecommerce/components/rounded_button.dart';
 import 'package:ecommerce/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -34,7 +34,7 @@ class Body extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) {
-                    return LoginScreen();
+                    return const LoginScreen();
                   }),
                 );
               },
@@ -47,7 +47,7 @@ class Body extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) {
-                    return SigninScreen();
+                    return const SignupScreen();
                   }),
                 );
               },
