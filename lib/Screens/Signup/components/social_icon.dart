@@ -16,7 +16,7 @@ class SocalIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: press,
-      borderRadius: BorderRadius.all(Radius.circular(100)),
+      borderRadius: const BorderRadius.all(Radius.circular(100)),
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 10),
         padding: const EdgeInsets.all(20),

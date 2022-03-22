@@ -1,3 +1,4 @@
+import 'package:ecommerce/Screens/Home/home_screen.dart';
 import 'package:ecommerce/Screens/Welcome/components/background.dart';
 import 'package:ecommerce/components/already_have_an_account_check.dart';
 import 'package:ecommerce/components/rounded_button.dart';
@@ -49,7 +50,14 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               text: "LOGIN",
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return const HomeScreen();
+                  }),
+                );
+              },
             ),
             SizedBox(
               height: size.height * 0.03,
